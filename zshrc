@@ -52,8 +52,8 @@ plugins=(git command-not-found fabric python pip sublime virtualenvwrapper)
 # brew 
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.bash_aliases
-source $HOME/.bash_profile
+source $HOME/.aliases
+source $HOME/.profile
 
 # User configuration
 
