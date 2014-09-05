@@ -82,3 +82,27 @@ fi
 }
 
 install_zsh
+
+# install pip
+install_pip() {
+    # try installing pip
+    if [[ command -v pip > /dev/null ]]; then        
+        platform=$(uname);
+        if [[ $platform == 'Linux' ]]; then
+            sudo apt-get install python-pip
+        elif [[ $platform == 'Darwin' ]]; then
+            sudo easy_install pip
+        fi
+    else
+        echo "pip already installed"
+    fi
+}
+
+# install virutalenv and virutalenvwrapper
+install_ve() {
+    sudo pip install virutalenv
+    sudo pip install virutalenvwrapper
+}
+
+install_pip
+install_ve
