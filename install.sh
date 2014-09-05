@@ -106,3 +106,22 @@ install_ve() {
 
 install_pip
 install_ve
+
+set_osx_defaults() {
+    platform=$(uname);
+    if [[ $platform == 'Darwin' ]]; then
+        # Always open everything in Finder's list view.
+        defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+        
+        # Show the ~/Library folder
+        chflags nohidden ~/Library
+
+        # Enable spring loading for all Dock items
+        # defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
+
+        # Show indicator lights for open applications in the Dock
+        # defaults write com.apple.dock show-process-indicators -bool true
+    fi
+}
+
+set_osx_defaults

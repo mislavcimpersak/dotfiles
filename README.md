@@ -11,6 +11,7 @@ The install script will:
 5. If zsh is installed, run a `chsh -s` to set it as the default shell.
 6. Install pip.
 7. Install virtualenv and virtualenvwrapper.
+8. Set up some OS X defaults.
 
 
 Installation
