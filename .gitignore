@@ -1,0 +1,9 @@
+# *nix temp files
+*~
+
+# Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
