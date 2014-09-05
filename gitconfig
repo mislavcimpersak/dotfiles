@@ -1,0 +1,18 @@
+[user]
+	email = mislav.cimpersak@gmail.com
+	name = Mislav Cimpersak
+[color]
+	ui = true
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[push]
+        default = simple

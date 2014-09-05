@@ -1,0 +1,41 @@
+{
+    "py/object": "cola.settings.SettingsModel",
+    "gui_state": {
+        "mainview": {
+            "lock_layout": true,
+            "height": 715,
+            "windowstate": "AAAA/wAAAAL9AAAAAgAAAAEAAASsAAACy/wCAAAAAfwAAAAAAAACywAAAIEA/////AIAAAAC/AAAAAAAAAFMAAAAYAD////8AQAAAAP8AAAAAAAABEUAAADwAP////wBAAAAAvsAAAAMAEMAbwBtAG0AaQB0AQAAAAAAAALGAAAAkgD////7AAAADABTAHQAYQB0AHUAcwEAAALJAAABfAAAAFsA////+wAAAA4AQQBjAHQAaQBvAG4AcwEAAARIAAAAZAAAAGQA////+wAAAAwAQQBjAHQAaQBvAG4BAAAEVgAAAFYAAAAAAAAAAPsAAAAIAEQAaQBmAGYBAAABTwAAAXwAAAAeAP///wAAAAMAAASsAAAAlvwBAAAAAfsAAAAOAEMAbwBuAHMAbwBsAGUAAAAAAAAABKwAAABnAP///wAAAAAAAALLAAAABAAAAAQAAAAIAAAACPwAAAAA",
+            "width": 1196,
+            "maximized": false,
+            "y": 182,
+            "x": 2276
+        },
+        "pull": {
+            "y": 147,
+            "x": 2016,
+            "rebase": false,
+            "height": 420,
+            "width": 666
+        },
+        "dagview": {
+            "count": 1000,
+            "lock_layout": false,
+            "height": 1056,
+            "windowstate": "AAAA/wAAAAH9AAAAAwAAAAAAAAOmAAAAuPwCAAAAAfsAAAAGAEwAbwBnAQAAAAAAAAC4AAAAawD///8AAAABAAADpgAAALj8AgAAAAH7AAAACgBHAHIAYQBwAGgBAAAAAAAAALgAAABgAP///wAAAAMAAAdPAAADZfwBAAAAAfsAAAAIAEQAaQBmAGYBAAAAAAAAB08AAAGHAP///wAAAAAAAAC4AAAABAAAAAQAAAAIAAAACPwAAAAA",
+            "width": 1871,
+            "maximized": true,
+            "y": 24,
+            "x": 1969
+        },
+        "push": {
+            "y": 225,
+            "x": 2521,
+            "maximized": false,
+            "width": 666,
+            "height": 420
+        }
+    },
+    "bookmarks": [],
+    "recent": [
+    ]
+}

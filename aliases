@@ -1,0 +1,24 @@
+# *nix
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias c='clear'
+alias now='date +"%T"'
+
+# Handy aliases for going up in a directory
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# Python
+alias cleanpyc='find . -name "*.pyc" -delete'
+
+# Django.
+alias djrun='python manage.py runserver'
+alias djsync='python manage.py syncdb'
+alias djmg='python manage.py migrate'
+alias djshell='python manage.py shell'
+alias djshell_plus='python manage.py shell_plus'
+
