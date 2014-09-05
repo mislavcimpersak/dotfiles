@@ -1,5 +1,3 @@
-source /usr/local/bin/virtualenvwrapper.sh
-
 platform=$(uname);
 if [[ $platform == 'Linux' ]]; then
     # klogg
@@ -10,3 +8,5 @@ elif [[ $platform == 'Darwin' ]]; then
     export WORKON_HOME=$HOME/.virtualenvs
     export PROJECT_HOME=$HOME/Dropbpx/dev
 fi
+
+source /usr/local/bin/virtualenvwrapper.sh
