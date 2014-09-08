@@ -1,4 +1,4 @@
-I fear that this will need a lot of itterations.
+I fear that this will need a lot of iterations.
 
 Dotfiles
 ========
