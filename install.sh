@@ -81,9 +81,6 @@ else
 fi
 }
 
-install_zsh
-
-# install pip
 install_pip() {
     # try installing pip
     if [[ command -v pip > /dev/null ]]; then        
@@ -104,8 +101,21 @@ install_ve() {
     sudo pip install virutalenvwrapper
 }
 
-install_pip
-install_ve
+install_homebrew(){
+    # Check for Homebrew
+    if test ! $(which brew)
+    then
+      echo "  Installing Homebrew."
+      ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" > /tmp/homebrew-install.log
+    fi
+}
+
+install_from_brew() {
+    brew install git
+    brew install wget
+    brew install curl
+    brew install zsh
+}
 
 set_osx_defaults() {
     platform=$(uname);
@@ -120,8 +130,39 @@ set_osx_defaults() {
         # defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 
         # Show indicator lights for open applications in the Dock
-        # defaults write com.apple.dock show-process-indicators -bool true
+        defaults write com.apple.dock show-process-indicators -bool true
+
+        # Minimize windows into their application’s icon
+        defaults write com.apple.dock minimize-to-application -bool true
+
+        # Enable full keyboard access for all controls
+        # (e.g. enable Tab in modal dialogs)
+        defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+        # check if this two settings help with blurry external LCD-s
+        # Enable subpixel font rendering on non-Apple LCDs
+        # defaults write NSGlobalDomain AppleFontSmoothing -int 2
+        # Enable HiDPI display modes (requires restart)
+        # sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+
+        # Set user home as the default location for new Finder windows
+        # For other paths, use `PfLo` and `file:///full/path/here/`
+        defaults write com.apple.finder NewWindowTarget -string "PfDe"
+        defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
+
+        # Finder: show all filename extensions
+        defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+        # Set the icon size of Dock items to 36 pixels
+        # defaults write com.apple.dock tilesize -int 36
+
+        # installing homebrew packages
+        install_from_brew
     fi
 }
 
+install_pip
+install_ve
+install_homebrew
 set_osx_defaults
+install_zsh
