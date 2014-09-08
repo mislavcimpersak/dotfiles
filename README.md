@@ -1,3 +1,5 @@
+I fear that this will need a lot of itterations.
+
 Dotfiles
 ========
 Collection of my dotfiles + an install script.
@@ -22,3 +24,7 @@ git clone git://github.com/mislavcimpersak/dotfiles ~/dotfiles
 cd ~/dotfiles
 ./install.sh
 ```
+
+TODO
+----
+- keyremap4macbook (https://bitbucket.org/sjl/dotfiles/src/e6f6389e598f33a32e75069d7b3cfafb597a4d82/keyremap4macbook/?at=default)
