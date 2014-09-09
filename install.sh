@@ -40,7 +40,7 @@ install_ubuntu_defaults() {
         sudo add-apt-repository ppa:webupd8team/sublime-text-2
         sudo apt-get update
         # installing apps
-        sudo apt-get install terminator gimp inkscape filezilla git-cola python-pip vlc curl pidgin indicator-multiload gparted filelight
+        sudo apt-get install vim terminator gimp inkscape filezilla git-cola python-pip vlc curl pidgin indicator-multiload gparted filelight
         sudo apt-get install unity-tweak-tool google-chrome-stable clementine sublime-text
         # cleaning Up
         sudo apt-get -f install &&
