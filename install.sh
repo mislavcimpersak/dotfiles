@@ -120,6 +120,15 @@ install_ve() {
     sudo pip install virutalenvwrapper
 }
 
+install_work_repositories() {
+    sudo pip install checkoutmanager
+    # checkout all work repositories
+    # check if config file exists
+    if [ -f ~/.checkoutmanager.cfg ]; then
+        checkoutmanager co
+    fi
+}
+
 install_homebrew(){
     # Check for Homebrew
     if test ! $(which brew)
@@ -182,6 +191,7 @@ set_osx_defaults() {
 
 install_pip
 install_ve
+install_work_repositories
 install_ubuntu_defaults
 install_homebrew
 set_osx_defaults
