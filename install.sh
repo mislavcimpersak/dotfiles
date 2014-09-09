@@ -31,6 +31,25 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
+install_ubuntu_defaults() {
+    platform=$(uname);
+    if [[ $platform == 'Linux' ]]; then
+        # adding repository
+        sudo add-apt-repository ppa:freyja-dev/unity-tweak-tool-daily && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - && sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+        sudo apt-add-repository ppa:me-davidsansome/clementine
+        sudo add-apt-repository ppa:webupd8team/sublime-text-2
+        sudo apt-get update
+        # installing apps
+        sudo apt-get install terminator gimp inkscape filezilla git-cola python-pip vlc curl pidgin indicator-multiload gparted filelight
+        sudo apt-get install unity-tweak-tool google-chrome-stable clementine sublime-text
+        # cleaning Up
+        sudo apt-get -f install &&
+        sudo apt-get autoremove &&
+        sudo apt-get -y autoclean &&
+        sudo apt-get -y clean
+    fi
+}
+
 # on ubuntu we need to install powerline fonts
 install_powerline_fonts () {
     # check if PowerLine fonts are already installed
@@ -163,6 +182,7 @@ set_osx_defaults() {
 
 install_pip
 install_ve
+install_ubuntu_defaults
 install_homebrew
 set_osx_defaults
 install_zsh
