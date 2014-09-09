@@ -102,8 +102,8 @@ fi
 
 install_pip() {
     # try installing pip
-    if [[ command -v pip > /dev/null ]]; then        
-        platform=$(uname);
+    platform=$(uname);
+    if command -v pip2 > /dev/null; then
         if [[ $platform == 'Linux' ]]; then
             sudo apt-get install python-pip
         elif [[ $platform == 'Darwin' ]]; then
