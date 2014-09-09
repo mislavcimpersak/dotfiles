@@ -189,8 +189,8 @@ set_osx_defaults() {
     fi
 }
 
-install_zsh
 install_pip
+install_zsh
 install_ve
 install_work_repositories
 install_ubuntu_defaults
