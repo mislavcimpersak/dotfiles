@@ -189,10 +189,10 @@ set_osx_defaults() {
     fi
 }
 
+install_zsh
 install_pip
 install_ve
 install_work_repositories
 install_ubuntu_defaults
 install_homebrew
 set_osx_defaults
-install_zsh
