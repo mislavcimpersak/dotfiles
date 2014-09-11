@@ -38,6 +38,7 @@ install_ubuntu_defaults() {
         sudo add-apt-repository ppa:freyja-dev/unity-tweak-tool-daily && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - && sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
         sudo apt-add-repository ppa:me-davidsansome/clementine
         sudo add-apt-repository ppa:webupd8team/sublime-text-2
+        sudo add-apt-repository ppa:indicator-multiload/stable-daily
         sudo apt-get update
         # installing apps
         sudo apt-get install vim terminator gimp inkscape filezilla git-cola python-pip vlc curl pidgin indicator-multiload gparted filelight
