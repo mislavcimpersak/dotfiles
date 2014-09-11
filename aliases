@@ -27,4 +27,4 @@ alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall 
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
 # zshrc
-alias reload=source ~/.zshrc
+alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
