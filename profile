@@ -1,7 +1,8 @@
 platform=$(uname);
 if [[ $platform == 'Linux' ]]; then
     # klogg
-    export WORKON_HOME=$HOME/dev/virtualenvs
+    # export WORKON_HOME=$HOME/dev/virtualenvs - old config
+    export WORKON_HOME=$HOME/.virtualenvs
     export PROJECT_HOME=$HOME/dev
 elif [[ $platform == 'Darwin' ]]; then
     # robotbill
